@@ -1,4 +1,4 @@
-# hamster-key-gen
+# hamster-keygen
 
 ###### how to launch?
 
