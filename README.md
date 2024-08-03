@@ -2,9 +2,7 @@
 
 ###### how to launch?
 
-1. Download keygen
-2. Launch index.html
-3. Select keys count and press start!
+1. Go to <a href="https://dogcompanyinc.github.io/hamster-keygen/">https://dogcompanyinc.github.io/hamster-keygen/</a>
 
 ### Soon I will create a python version of generator!
 
