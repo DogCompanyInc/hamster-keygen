@@ -1,31 +1,49 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamster Key Generator by Dogie</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Game Promo Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <p>Created by Dogie (DogCompanyInc)</p>
-        </header>
-        <h1>Key Generator</h1>
-        <select id="keyCountSelect">
-            <option value="1">1 Key</option>
-            <option value="2">2 Keys</option>
-            <option value="3">3 Keys</option>
-            <option value="4">4 Keys</option>
-        </select>
-        <button id="startBtn">Start</button>
+        <h1>Hamster kombat key generator by Dogie</h1>
+        <div class="form-group">
+            <label for="gameSelect">Select Game</label>
+            <select id="gameSelect">
+                <option value="1">Riding Extreme 3D</option>
+                <option value="2">Chain Cube 2048</option>
+                <option value="3">My Clone Army</option>
+                <option value="4">Train Miner</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="keyCountLabel" for="keyCountSelect">Number of keys:</label>
+            <select id="keyCountSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <button id="startBtn">Generate Keys</button>
         <div id="progressContainer" class="hidden">
-            <div id="progressBar"></div>
-            <span id="progressText">0%</span>
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <div id="progressText">0%</div>
+            <div id="progressLog">Starting...</div>
         </div>
         <div id="keyContainer" class="hidden">
-            <h2>Generated Keys:</h2>
-            <p id="generatedKeys"></p>
+            <h3 id="generatedKeysTitle" class="hidden">Generated Keys:</h3>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
+            <div id="copyStatus" class="hidden">Copied!</div>
+            <button id="generateMoreBtn">Generate More Keys</button>
+        </div>
+        <div class="footer">
+            <p>Made with love by Dogie from DogCO</p>
         </div>
     </div>
     <script src="script.js"></script>
