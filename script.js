@@ -141,10 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const storageKey = `keys_generated_${game.name}`;
         const storedData = JSON.parse(localStorage.getItem(storageKey));
 
-        if (storedData.count + keyCount > MAX_KEYS_PER_GAME_PER_DAY) {
-            alert(`You can generate only ${MAX_KEYS_PER_GAME_PER_DAY - storedData.count} more keys for ${game.name} today. Please contact us on Telegram for more keys.`);
-            return;
-        }
+        
 
         keyCountLabel.innerText = `Number of keys: ${keyCount}`;
 
