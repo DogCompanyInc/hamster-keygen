@@ -8,5 +8,4 @@
 
 Known bugs:
 
-* Generation stops on 80% (does not affect on generation) (visual bug)
-* Generator doesn't work in Microsoft Edge
+* All works!!!
